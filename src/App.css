@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: 'Josefin Sans';
+    background-color: #C9EFC7;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  ::-webkit-scrollbar {
+    width: 0px;
   }
-}
+  
+  .detail-image {
+    width: 729px;
+    height: 720px;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8px #999;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+
+  .detail-image:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .hero-banner-img {
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    width: 700px;
+    height: 900px;
+    margin-top: -330px;
+  }
+  
+  .grocery-card {
+    width: 15rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8px #999;
+    background: #fff;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+    
+  }
+  
+  .grocery-card img {
+    max-height: 100%;
+  max-width: 100%;
+  border-radius: 6px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  }
+  
+  .grocery-card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .search-btn:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+  }
+  
+  @media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .hero-banner-img {
+      display: none;
+    }
+  
+    .grocery-card {
+      width: 320px;
+    }
+  
+    .grocery-video {
+      width: 320px;
+      height: 300px;
+    }
+    .best-products{
+      width: 320px;
+    }
+  
+  }
+  .best-products{
+    width: 15rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8px #999;
+    background: #C9EFC7;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .best-product-image{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+  }
+  .rating{
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .best-products:hover {
+    transform: scale(1.1, 1.1);
+  }
+  a{
+    text-decoration: none;
+  }
+  span{
+    color: black;
+  }
+  @media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+
+    .best-products{
+      width: 100px;
+    }
+  }
